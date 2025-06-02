@@ -83,7 +83,7 @@ input {
   align-items: center;
 
   width: 100%;
-  background-image: url("../images/startScreenBG.png");
+  background-image: url("images/startScreenBG.png");
   background-size: 102%;
   overflow: visible;
 }
