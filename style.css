@@ -83,7 +83,7 @@ input {
   align-items: center;
 
   width: 100%;
-  background-image: url("../images/startScreenBG.png");
+  background-image: url("images/startScreenBG.png");
   background-size: 102%;
   overflow: visible;
 }
@@ -94,7 +94,7 @@ input {
 #failureScreen {
   padding-top: 4em;
   width: 100%;
-  background-image: url("../images/loginScreenBG.png");
+  background-image: url("images/loginScreenBG.png");
   background-size: 102%;
   overflow: visible;
 }
