@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infiltrate the System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/icon.png" type="image/png">
+</head>
+<body>
+    <section id="startScreen">
+        <h2>Infiltrate <br>the system!</h2>
+        <button id="startGameBtn">Start Now</button>
+    </section>
+    <section id="loginScreen" class="hidden">
+        <h2>Give yourself<br> a codename!</h2>
+        <div>
+            <input type="text" placeholder="e.g. Anonymous" id="codenameInput" onclick="playClickSound()">
+            <button id="submitCodenameBtn">Continue</button>
+        </div>
+    </section>
+    <section id="missionBrief" class="hidden">
+        <h2>Your mission</h2>
+        <p>Your company has sent you, <span id="playerCodename">???</span>, as the Red Team to infiltrate a building and identify its weaknesses. See how far you can get inside the building without being noticed. On each floor, you need to find a specific computer, crack its code and open the next door. Try to do this in under two minutes each time in order to reach the CEO's office. Good luck!</p>
+        <button id="startMission">Start your mission</button>
+    </section>
+    <div>
+        <div id="timerDisplay" class="hidden">
+            <p id="timer">02:00</p>
+        </div>
+        <canvas id="gameCanvas" class="hidden"></canvas>
+    </div>
+    <div id="missionPopup" class="popup"> 
+        <div class="popup-content">
+        <h2>Computer of Erik</h2>
+        <p>Use the Caesar cipher (shift of 12) to decrypt 'tqxxa'.</p>
+        <input type="text" id="answerInput" placeholder="Helle Erik, put here your password" onclick="playClickSound()">
+        <!-- https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click -->
+        <button onclick="playClickSound(); closePopup()">Send</button>
+        </div>
+    </div>
+    <!-- deur geopend en binnen de  tijd -->
+    <section id="victoryScreen" class="hidden">
+        <h2>Victory</h2>
+        <p>You have completed the first floor! Go to the next mission to get closer to the CEO's office!</p>
+        <div>
+            <p>Time: <span id="finalTime"></span></p>
+            <p>Score: <span id="finalScore"></span></p>
+        </div>
+        <button id="nextLevelBtn">Go to the next floor</button>
+    </section>
+    <!-- deur niet geopend en tijd is al afgelopen -->
+    <section id="failureScreen" class="hidden">
+        <h2>You got caught!</h2>
+        <p>Unfortunately, you have been spotted by the security cameras. You can always try again! Hint: try to find Erik's computer — he likes the colour red!</p>
+        <button id="retryBtn">retry your mission</button>
+    </section>
+    <audio id="clickSound" src="audio/clicking_gamesound.wav" preload="auto"></audio>
+    <script src="data/collisions.js"></script>
+    <script src="data/mission.js"></script>
+    <script src="data/door.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
