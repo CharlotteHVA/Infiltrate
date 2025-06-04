@@ -3,7 +3,7 @@
 
 ## Over dit project
 
-Dit is mijn eindproject voor de cursus *Introductie tot programmeren*, waarin ik de basis van JavaScript heb toegepast. Het project is een interactief spel waarin de speler moet infiltreren in het systeem.
+Dit is mijn eindproject voor het vak *inleiding programmeren*, waarin ik de basis van JavaScript heb toegepast. Het project is een interactief spel waarin de speler moet infiltreren in het systeem.
 
 ## Gebruikte technieken
 
