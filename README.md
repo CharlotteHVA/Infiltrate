@@ -1,8 +1,6 @@
 # Charlotte Moolenaar – Infiltrate The System  
 # Eindopdracht Inleiding Programmeren
 
-## Over dit project
-
 Dit is mijn eindproject voor het vak *inleiding programmeren*, waarin ik de basis van JavaScript heb toegepast. Het project is een interactief spel waarin de speler moet infiltreren in het systeem.
 
 ## Gebruikte technieken
